@@ -15,6 +15,9 @@ a, ul, li, p, h1,button{
     color: black;
     font-family: 'Crimson Text', serif;
 }
+a{
+    transition: 300ms ease-in;
+}
 
 
 
@@ -306,8 +309,16 @@ display: flex;
     background: #3EBA8F;
 }
 /*------------footer-------------*/
-.footer-nav{
+.footer-container{
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(180deg, rgb(128, 128, 128),rgb(168, 155, 155));
+}
+.footer-copyright{
+    display: flex;
+    justify-content: right;
+}
+.footer-nav{
     width: 100%;
     max-width: 1192px;
     display: flex;

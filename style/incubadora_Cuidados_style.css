@@ -1,0 +1,147 @@
+.first{
+    margin-top: 6rem;
+    padding-top: 1rem;
+    justify-content: left;
+}
+.max-width {
+    width: 100%;
+}
+.body{
+    background-color: white;   
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first header h1{
+    margin: 1rem;
+    position: relative;
+}
+
+.first header h1::after{
+    content: "";
+    background: #B85239;
+    height: 5px;
+    width: 80%;
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    border-radius: 5px;
+}
+.body p,h2,h3,ul,li{
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+.body p,li{
+   font-size: 1.2rem;
+}
+
+.body-ul{
+    padding-left: 1rem;
+}
+.body img{
+    padding-left: 1rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.body iframe{
+    margin: 1rem;
+    max-width: 1000px;
+    width: 100%;
+}
+.formulario{
+    color: #B85239;
+    text-decoration: underline;
+}
+.formulario:hover{
+    text-decoration: none;
+}
+
+
+@media  (max-width:600px) {
+    .first header h1::after{
+        width: 100%;
+        bottom: 0;
+    }
+    .body img{
+        padding: 0rem;
+    }
+    
+    .body iframe{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+
+.input,textarea {
+    border:0; 
+    padding:10px; 
+    border:solid 1px #ccc; 
+    margin:0 0 20px; 
+    box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;    
+}
+ 
+ input:focus, textarea:focus { 
+    outline: none;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+ }
+
+ .formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+ }
+ 
+ .formulario__body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+ }
+ 
+ .formulario__nombre-apellido{
+    max-width: 1192px;
+    margin-right: 1rem;
+ }
+ 
+ .formulario__nombre-apellido input{
+    border: 0.2px solid hsla(210, 11%, 15%, 0.5);
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    width: 100%;
+    
+ }
+ 
+ .formulario__body textarea{
+    min-height: 150px;
+    padding: 0.5rem;
+ }
+ 
+ .formulario__body p{
+    color: #212529;
+    font-size: 0.7rem;
+    font-weight: 100;
+ }
+ 
+ .submit{
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    border: 0;
+    background-color: #96C93E;
+    color: white;
+    padding: 10rem;
+    border-radius: 5px;
+    transition: 300ms ease-in;
+ }
+ 
+ .submit:hover{
+    background-color: #489543;
+ }
+
+ form{
+    margin: 1rem;
+ }
+ 

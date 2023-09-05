@@ -309,16 +309,8 @@ display: flex;
     background: #3EBA8F;
 }
 /*------------footer-------------*/
-.footer-container{
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(180deg, rgb(128, 128, 128),rgb(168, 155, 155));
-}
-.footer-copyright{
-    display: flex;
-    justify-content: right;
-}
 .footer-nav{
+    background: linear-gradient(180deg, rgb(128, 128, 128),rgb(168, 155, 155));
     width: 100%;
     max-width: 1192px;
     display: flex;
